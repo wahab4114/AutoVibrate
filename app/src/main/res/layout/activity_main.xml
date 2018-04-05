@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    tools:context="com.example.user.mapsapplication.MainActivity"
+
+
+
+    >
+
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        ></ListView>
+
+
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/floating_action36"
+        android:scaleType="center"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+
+         />
+
+    <RelativeLayout
+        android:id="@+id/emptyview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty192"/>
+
+        <TextView
+            android:id="@+id/textemptycase"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No location is selected."
+            android:textSize="20dp"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
